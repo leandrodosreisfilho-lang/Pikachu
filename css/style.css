@@ -1,0 +1,139 @@
+:root{
+    --primary-color: #F5CF06;
+    --secundary-color: #8E4106;
+}
+body{
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    font-family: Righteous, sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+header span {
+    font-size: 32px;
+    color: var(--secundary-color)
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.sombra {
+    position: absolute;
+    font-size: 28vw;
+    color: #ffffff55;
+    z-index: -999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+}
+h1{
+    flex-grow: 1;
+    font-size: 22vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    height: 154px;
+    padding-bottom: 0px;
+    color: var(--secundary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.container h2 {
+    font-size: 64px;
+}
+.container p {
+    font-size: 20px;
+    width: 500px;
+
+}
+.container a {
+    width: 411px;
+    height: 100px;
+    font-size: 48px;
+    background-color: var(--secundary-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descricao {
+    z-index: 1;
+}
+.pikachu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer{
+    text-align: center;
+    color: var(--secundary-color);
+}
+
+/* tablet */
+@media(max-width:1024px){
+    body{
+        padding: 30px;
+    }
+    main{
+        justify-content: space-between;
+    }
+    .descricao p{
+        text-align: center;
+    }
+    footer {
+        display: none;
+    }
+    h1{
+        transform: translate(0%, -30%);
+    }
+    .sombra{
+        transform: translate(-50%, -180%);
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0%;
+        gap: 10px;
+    }
+    .pikachu{
+        transform: translate(-45%, -50%);
+    }
+    
+}
+
+@media(max-width:480px){
+    .descricao p{
+        display: none;
+    }
+    .pikachu{
+        height: 50vh;
+    }
+    .sombra{
+        transform: translate(-50%,-220%);
+    }
+    h1{
+        transform: translate(-0%,-22%);
+    }
+    .descricao h2{
+        font-size: 38px;
+    }
+    .container a{
+        width: 100%;
+    }
+ 
+}

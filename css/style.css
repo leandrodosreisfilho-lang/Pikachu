@@ -1,7 +1,10 @@
+/*ADICIONA REGRAS PRATICAS E UNIVERSAIS PARA SEREM REUTILIZADAS COM --*/
 :root{
     --primary-color: #F5CF06;
     --secundary-color: #8E4106;
 }
+
+/*HEIGHT FOI UTILIZADO VH REFERENTE AO TAMANHO TOTAL DA TELA / VER PRIMARY UTILIZA O ROOT*/
 body{
     height: 100vh;
     background-color: var(--primary-color);
